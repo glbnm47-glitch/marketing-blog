@@ -1,0 +1,104 @@
+baseURL: "https://glbnm47-glitch.github.io/marketing-blog/"
+languageCode: "ko"
+title: "마케팅 블로그"
+theme: PaperMod
+pagination:
+  pagerSize: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "마케팅 블로그"
+  description: "SEO 최적화 마케팅 인사이트"
+  author: "마케팅팀"
+  # domain: TBD — 커스텀 도메인 연결 시 baseURL을 https://[도메인]/ 으로 업데이트
+  DateFormat: "2006년 01월 02일"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true
+
+  label:
+    text: "마케팅 블로그"
+
+  homeInfoParams:
+    Title: "마케팅 블로그"
+    Content: "SEO 최적화 콘텐츠 · 키워드 리서치 기반 블로그 포스트"
+
+  socialIcons: []
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  editPost:
+    URL: "https://github.com/glbnm47-glitch/marketing-blog/blob/main/content"
+    Text: "수정 제안"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: categories
+      name: 카테고리
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 태그
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: 검색
+      url: /search/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
