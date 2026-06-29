@@ -1,8 +1,8 @@
 ---
 title: "클로드코드 MCP 설정 추천 2026: 직접 써보니 이거면 됩니다"
 description: "클로드코드 MCP 설정 추천 TOP 5를 실사용 기반으로 정리했습니다. GitHub·Notion·Firecrawl 등 상황별 MCP 서버 선택법과 2026년 신기능 Tool Search까지 한 번에 정리."
-date: 2026-06-30
-lastmod: 2026-06-30
+date: 2026-06-29
+lastmod: 2026-06-29
 draft: false
 tags: ["클로드코드", "MCP 설정", "클로드코드 MCP 추천", "클로드코드 사용법"]
 categories: ["클로드코드"]
